@@ -4,7 +4,9 @@
   --font-family: "Inter", sans-serif;
 
   --color-light-text: #70747d;
-  --color-dark-text: 110e27;
+  --color-dark-text: #110e27;
+
+  --spacing: 20px;
 }
 
 body {
