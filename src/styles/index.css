@@ -1,0 +1,13 @@
+@import "./reset.css";
+
+:root {
+  --font-family: "Inter", sans-serif;
+
+  --color-light-text: #70747d;
+  --color-dark-text: 110e27;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--color-light-text);
+}
