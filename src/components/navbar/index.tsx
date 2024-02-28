@@ -29,7 +29,7 @@ export function Navbar() {
   );
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled.header`
   display: flex;
   padding: 40px 0;
   align-items: center;
