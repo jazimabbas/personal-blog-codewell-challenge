@@ -74,7 +74,7 @@ const EmailFieldWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
-  background-color: #f3f5f7;
+  background-color: var(--bg-light);
   border-radius: 5px;
   padding: 16px;
 `;
