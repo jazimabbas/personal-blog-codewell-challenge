@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Card } from "./card";
 import { SecondaryCard } from "./secondary-card";
+import { Pagination } from "../pagination";
 
 export function MainSection() {
   return (
@@ -19,6 +20,7 @@ export function MainSection() {
         imageURL="/card-image-02.png"
         timestamp="20/11/2021"
       />
+      <Pagination />
 
       <div style={{ marginBottom: "50px" }} />
     </Wrapper>
