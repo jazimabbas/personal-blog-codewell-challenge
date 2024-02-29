@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { Card } from "./card";
-import { SecondaryCard } from "./secondary-card";
+import { Newsletter } from "./newsletter";
 import { Pagination } from "../pagination";
+import { SecondaryCard } from "./secondary-card";
 
 export function MainSection() {
   return (
@@ -21,6 +22,7 @@ export function MainSection() {
         timestamp="20/11/2021"
       />
       <Pagination />
+      <Newsletter />
 
       <div style={{ marginBottom: "50px" }} />
     </Wrapper>

@@ -23,8 +23,8 @@ export function SecondaryCard() {
 }
 
 const Wrapper = styled.div`
-  background-color: #f6ca45;
-  border-radius: 1px solid #f6ca45;
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
   display: flex;
 `;
 
