@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Mail } from "lucide-react";
+import { Button } from "../button";
 
 export function Navbar() {
   return (
@@ -85,13 +86,4 @@ const Input = styled.input`
   border: none;
   outline: none;
   flex: 1;
-`;
-
-const Button = styled.button`
-  padding: 16px 21px;
-  background-color: #2d2727;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  border: none;
 `;

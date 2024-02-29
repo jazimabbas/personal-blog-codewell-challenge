@@ -23,6 +23,7 @@ export default function App() {
 const Main = styled.main`
   display: flex;
   gap: 60px;
+  padding-top: 20px;
 `;
 
 const RightAside = styled.aside`
