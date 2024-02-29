@@ -1,9 +1,11 @@
+import styled from "styled-components";
+
+import { Footer } from "./components/footer";
 import { Navbar } from "./components/navbar";
 import { LeftAside } from "./components/left-aside";
+import { RightAside } from "./components/right-aside";
 import { MainSection } from "./components/main-section";
 import { MaxWidthWrapper } from "./components/max-width";
-import styled from "styled-components";
-import { Footer } from "./components/footer";
 
 export default function App() {
   return (
@@ -14,9 +16,7 @@ export default function App() {
         <Main>
           <LeftAside />
           <MainSection />
-          <RightAside>
-            <p>Right Aside</p>
-          </RightAside>
+          <RightAside />
         </Main>
       </MaxWidthWrapper>
       <Footer />
@@ -26,10 +26,6 @@ export default function App() {
 
 const Main = styled.main`
   display: flex;
-  gap: 60px;
+  gap: 40px;
   padding-top: 20px;
-`;
-
-const RightAside = styled.aside`
-  flex-basis: 200px;
 `;

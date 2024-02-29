@@ -31,6 +31,7 @@ const Item = styled.p<{ $isSelected?: boolean }>`
   padding: 5px 12px;
   border-radius: 7px;
   cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
 
   ${(p) =>
     p.$isSelected &&
@@ -38,4 +39,9 @@ const Item = styled.p<{ $isSelected?: boolean }>`
       background-color: #000;
       color: #fff;
     `}
+
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
 `;

@@ -49,7 +49,7 @@ export function LeftAside() {
 const Wrapper = styled.aside`
   --padding: 12px 15px;
 
-  flex-basis: 160px;
+  flex-basis: 170px;
 `;
 
 const Items = styled.div`

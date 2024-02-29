@@ -31,7 +31,7 @@ export function Card({ heading, subHeading, imageURL, timestamp }: Props) {
 
 const Wrapper = styled.div`
   padding: 30px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--color-border);
 `;
 
 const SectionWrapper = styled.div`
