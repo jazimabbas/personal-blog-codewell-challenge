@@ -1,17 +1,21 @@
 import styled from "styled-components";
 
-export function Card() {
+type Props = {
+  heading: string;
+  subHeading: string;
+  imageURL: string;
+  timestamp: string;
+};
+
+export function Card({ heading, subHeading, imageURL, timestamp }: Props) {
   return (
     <Wrapper>
       <SectionWrapper>
         <ContentWrapper>
-          <Heading>Understanding the reasons behind a successful startup</Heading>
-          <p>
-            Going over the reasons why most successful startups should understand the basics of
-            business instead of just launching into the void without any market study.
-          </p>
+          <Heading>{heading}</Heading>
+          <p>{subHeading}</p>
         </ContentWrapper>
-        <img src="/card-image-01.png" />
+        <img src={imageURL} />
       </SectionWrapper>
       <Footer>
         <FirstSection>
@@ -19,7 +23,7 @@ export function Card() {
           <Username>Jazim Abbas </Username>
           <Time>12 hours ago</Time>
         </FirstSection>
-        <p>23/11/2021</p>
+        <p>{timestamp}</p>
       </Footer>
     </Wrapper>
   );

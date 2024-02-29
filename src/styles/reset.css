@@ -66,6 +66,10 @@ h6 {
   overflow-wrap: break-word;
 }
 
+p {
+  line-height: 1.5;
+}
+
 /*
     9. Create a root stacking context
   */

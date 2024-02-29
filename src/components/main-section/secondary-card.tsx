@@ -5,7 +5,7 @@ export function SecondaryCard() {
   return (
     <Wrapper>
       <ContentWrapper>
-        <h2>Announcing a new platform, Codewell.</h2>
+        <Heading>Announcing a new platform, Codewell.</Heading>
         <p>
           Codewell is a platform that helps you improve your frontend skills by practicing on real
           world design templates.
@@ -16,7 +16,7 @@ export function SecondaryCard() {
         </ActionsWrapper>
       </ContentWrapper>
       <ImageWrapper>
-        <img src="https://bluedeepart.github.io/codewell-challenges/2021/personal-blog/assets/Images/Illustration.svg" />
+        <img src="/Illustration.svg" />
       </ImageWrapper>
     </Wrapper>
   );
@@ -35,6 +35,11 @@ const ContentWrapper = styled.div`
   flex-direction: column;
   gap: 20px;
   color: #110e27;
+`;
+
+const Heading = styled.h2`
+  font-size: 20px;
+  font-weight: 700;
 `;
 
 const ActionsWrapper = styled.div`
