@@ -3,20 +3,24 @@ import { LeftAside } from "./components/left-aside";
 import { MainSection } from "./components/main-section";
 import { MaxWidthWrapper } from "./components/max-width";
 import styled from "styled-components";
+import { Footer } from "./components/footer";
 
 export default function App() {
   return (
-    <MaxWidthWrapper>
-      <Navbar />
+    <>
+      <MaxWidthWrapper>
+        <Navbar />
 
-      <Main>
-        <LeftAside />
-        <MainSection />
-        <RightAside>
-          <p>Right Aside</p>
-        </RightAside>
-      </Main>
-    </MaxWidthWrapper>
+        <Main>
+          <LeftAside />
+          <MainSection />
+          <RightAside>
+            <p>Right Aside</p>
+          </RightAside>
+        </Main>
+      </MaxWidthWrapper>
+      <Footer />
+    </>
   );
 }
 

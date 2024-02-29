@@ -26,6 +26,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   gap: 70px;
   padding-top: var(--spacing);
+  margin-bottom: -150px;
 `;
 
 const ContentWrapper = styled.div`
