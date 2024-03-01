@@ -20,26 +20,38 @@ export function Header({ setIsMenuOpen }: { setIsMenuOpen: any }) {
   }, []);
 
   return (
-    <Wrapper
-      animate={{
-        paddingTop: isScrolled ? "20px" : undefined,
-        paddingBottom: isScrolled ? "20px" : undefined,
-        boxShadow: isScrolled ? "rgba(0, 0, 0, 0.2) 0px 1px 2px 0px" : undefined,
-      }}
-      transition={{ duration: 0.1, ease: "easeOut" }}
-    >
-      <BrandName>Jazim Abbas</BrandName>
-      <Icon as={Menu} size={25} onClick={setIsMenuOpen} />
-    </Wrapper>
+    <OuterWrapper>
+      <Wrapper
+        animate={{
+          paddingTop: isScrolled ? "20px" : undefined,
+          paddingBottom: isScrolled ? "20px" : undefined,
+          boxShadow: isScrolled ? "rgba(0, 0, 0, 0.2) 0px 1px 2px 0px" : undefined,
+        }}
+        transition={{ duration: 0.1, ease: "easeOut" }}
+      >
+        <BrandName>Jazim Abbas</BrandName>
+        <Icon as={Menu} size={25} onClick={setIsMenuOpen} />
+      </Wrapper>
+    </OuterWrapper>
   );
 }
+
+const OuterWrapper = styled.div`
+  display: none;
+  position: sticky;
+  top: 0;
+  isolation: isolate;
+  z-index: 1;
+
+  @media (max-width: 1020px) {
+    display: block;
+  }
+`;
 
 const Wrapper = styled(motion.header)`
   display: flex;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
-  isolation: isolate;
+
   margin: 0 calc(var(--spacing) * -1);
   padding: 40px var(--spacing);
   background-color: #fff;

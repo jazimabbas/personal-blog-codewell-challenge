@@ -5,31 +5,39 @@ import { EmailFieldWrapper, Input, ListItem } from "./common";
 
 export function DesktopNavbar() {
   return (
-    <Wrapper>
-      <Brand>Jazim Abbas</Brand>
-      <Nav>
-        <ListItems>
-          <ListItem>
-            <a href="">Writings</a>
-          </ListItem>
-          <ListItem>
-            <a href="">Awards</a>
-          </ListItem>
-          <ListItem>
-            <a href="">Sponser</a>
-          </ListItem>
-        </ListItems>
-        <FormWrapper>
-          <EmailFieldWrapper>
-            <Mail size={18} />
-            <Input placeholder="jazim@example.com" />
-          </EmailFieldWrapper>
-          <Button>Create new post</Button>
-        </FormWrapper>
-      </Nav>
-    </Wrapper>
+    <OuterWrapper>
+      <Wrapper>
+        <Brand>Jazim Abbas</Brand>
+        <Nav>
+          <ListItems>
+            <ListItem>
+              <a href="">Writings</a>
+            </ListItem>
+            <ListItem>
+              <a href="">Awards</a>
+            </ListItem>
+            <ListItem>
+              <a href="">Sponser</a>
+            </ListItem>
+          </ListItems>
+          <FormWrapper>
+            <EmailFieldWrapper>
+              <Mail size={18} />
+              <Input placeholder="jazim@example.com" />
+            </EmailFieldWrapper>
+            <Button>Create new post</Button>
+          </FormWrapper>
+        </Nav>
+      </Wrapper>
+    </OuterWrapper>
   );
 }
+
+const OuterWrapper = styled.div`
+  @media (max-width: 1020px) {
+    display: none;
+  }
+`;
 
 const Wrapper = styled.header`
   display: flex;
