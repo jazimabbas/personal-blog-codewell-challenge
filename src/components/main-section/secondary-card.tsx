@@ -35,6 +35,10 @@ const ContentWrapper = styled.div`
   flex-direction: column;
   gap: 20px;
   color: #110e27;
+
+  @media (max-width: 768px) {
+    flex-basis: 100%;
+  }
 `;
 
 const Heading = styled.h2`
@@ -57,4 +61,8 @@ const Link = styled.a`
 
 const ImageWrapper = styled.div`
   align-self: flex-end;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;

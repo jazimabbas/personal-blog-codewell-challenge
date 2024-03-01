@@ -27,6 +27,11 @@ const Wrapper = styled.div`
   gap: 70px;
   padding-top: var(--spacing);
   margin-bottom: -150px;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -37,6 +42,10 @@ const ContentWrapper = styled.div`
   gap: 20px;
   padding-left: var(--spacing);
   padding-bottom: calc(var(--spacing) + 30px);
+
+  @media (max-width: 768px) {
+    padding: var(--spacing);
+  }
 `;
 
 const Heading = styled.h2`
@@ -58,4 +67,14 @@ const ImageWrapper = styled.div`
   flex: 1;
   display: flex;
   justify-content: flex-end;
+
+  @media (max-width: 768px) {
+    align-self: center;
+
+    img {
+      width: 340px;
+      /* height: 140px; */
+      align-self: center;
+    }
+  }
 `;
