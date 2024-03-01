@@ -7,4 +7,8 @@ export const MaxWidthWrapper = styled.div`
   padding-right: var(--spacing);
   margin-left: auto;
   margin-right: auto;
+
+  @media (max-width: 998px) {
+    --spacing: 10px;
+  }
 `;

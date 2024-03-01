@@ -8,18 +8,22 @@ import { MainSection } from "./components/main-section";
 import { MaxWidthWrapper } from "./components/max-width";
 
 export default function App() {
+  const items = Array.from({ length: 500 }, (_, index) => index);
+
   return (
     <>
       <MaxWidthWrapper>
         <Navbar />
-
-        <Main>
+        {/* <Main>
           <LeftAside />
           <MainSection />
           <RightAside />
-        </Main>
+        </Main> */}
+        {items.map((item) => (
+          <p key={item}>{item.toString()}</p>
+        ))}
       </MaxWidthWrapper>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
