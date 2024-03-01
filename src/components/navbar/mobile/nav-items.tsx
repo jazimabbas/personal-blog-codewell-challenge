@@ -1,13 +1,19 @@
 import { Mail, X } from "lucide-react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { createPortal } from "react-dom";
 import { Button } from "../../button";
-import { EmailFieldWrapper, Input, ListItem } from "../common";
 import { MaxWidthWrapper } from "../../max-width";
+import { EmailFieldWrapper, Input, ListItem } from "../common";
 
 export function NavItems({ setIsMenuOpen }: { setIsMenuOpen: any }) {
   return createPortal(
-    <Wrapper>
+    <Wrapper
+      initial={{ clipPath: "inset(0 100% 0 0)" }}
+      animate={{ clipPath: "inset(0 100% 0 100%)" }}
+      exit={{ clipPath: "inset(0 100% 0 0)" }}
+      transition={{ duration: 0.2 }}
+    >
       <MaxWidthWrapper>
         <ContentWrapper>
           <CloseIcon as={X} size={25} onClick={setIsMenuOpen} />
@@ -34,7 +40,7 @@ export function NavItems({ setIsMenuOpen }: { setIsMenuOpen: any }) {
   );
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled(motion.div)`
   position: fixed;
   z-index: 200;
   top: 0;
@@ -42,6 +48,7 @@ const Wrapper = styled.div`
   width: 100%;
   height: 100%;
   background-color: #fff;
+  overflow-x: hidden;
 `;
 
 const ContentWrapper = styled.nav`

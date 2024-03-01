@@ -42,7 +42,6 @@ const Wrapper = styled(motion.header)`
   isolation: isolate;
   margin: 0 calc(var(--spacing) * -1);
   padding: 40px var(--spacing);
-  border-bottom: 1px solid var(--color-border);
 `;
 
 const BrandName = styled.h1`

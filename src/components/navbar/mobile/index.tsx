@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
 import { Header } from "./header";
 import { NavItems } from "./nav-items";
 
@@ -13,7 +14,9 @@ export function MobileNavbar() {
   return (
     <>
       <Header setIsMenuOpen={handleToggleMenu} />
-      {isMenuOpen && <NavItems setIsMenuOpen={handleToggleMenu} />}
+      <AnimatePresence>
+        {isMenuOpen && <NavItems setIsMenuOpen={handleToggleMenu} />}
+      </AnimatePresence>
     </>
   );
 }
