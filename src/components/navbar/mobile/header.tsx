@@ -24,7 +24,7 @@ export function Header({ setIsMenuOpen }: { setIsMenuOpen: any }) {
       animate={{
         paddingTop: isScrolled ? "20px" : undefined,
         paddingBottom: isScrolled ? "20px" : undefined,
-        border: isScrolled ? "1px solid var(--color-border)" : undefined,
+        boxShadow: isScrolled ? "rgba(0, 0, 0, 0.2) 0px 1px 2px 0px" : undefined,
       }}
       transition={{ duration: 0.1, ease: "easeOut" }}
     >
