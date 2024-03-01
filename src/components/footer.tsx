@@ -9,7 +9,7 @@ export function Footer() {
       <MaxWidthWrapper>
         <ContentWrapper>
           <Brand>Jazim Abbas</Brand>
-          <p>© {currentYear} Jazim Abbas, All Rights Reserved</p>
+          <Copyright>© {currentYear} Jazim Abbas, All Rights Reserved</Copyright>
           <LinksWrapper>
             <LinkItem>
               <Link href="https://www.linkedin.com/in/jazimabbas">LinkedIn</Link>
@@ -34,6 +34,12 @@ const Wrapper = styled.footer`
 const ContentWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 `;
 
 const Brand = styled.p`
@@ -43,6 +49,7 @@ const Brand = styled.p`
 const LinksWrapper = styled.ul`
   display: flex;
   gap: 20px;
+  padding-left: 0;
 `;
 
 const LinkItem = styled.li`
@@ -52,4 +59,8 @@ const LinkItem = styled.li`
 const Link = styled.a`
   color: inherit;
   text-decoration: none;
+`;
+
+const Copyright = styled.p`
+  text-align: center;
 `;

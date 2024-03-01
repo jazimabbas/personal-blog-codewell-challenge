@@ -8,8 +8,6 @@ import { MainSection } from "./components/main-section";
 import { MaxWidthWrapper } from "./components/max-width";
 
 export default function App() {
-  const items = Array.from({ length: 500 }, (_, index) => index);
-
   return (
     <>
       <MaxWidthWrapper>
@@ -20,7 +18,7 @@ export default function App() {
           <RightAside />
         </Main>
       </MaxWidthWrapper>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
