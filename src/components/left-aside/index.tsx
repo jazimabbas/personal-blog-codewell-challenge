@@ -48,8 +48,11 @@ export function LeftAside() {
 
 const Wrapper = styled.aside`
   --padding: 12px 15px;
-
   flex-basis: 170px;
+
+  @media (max-width: 1020px) {
+    display: none;
+  }
 `;
 
 const Items = styled.div`

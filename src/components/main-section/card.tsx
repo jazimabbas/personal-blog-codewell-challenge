@@ -37,6 +37,17 @@ const Wrapper = styled.div`
 const SectionWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    gap: 20px;
+
+    img {
+      width: 340px;
+      /* height: 140px; */
+      align-self: center;
+    }
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -57,6 +68,12 @@ const Footer = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+
+  @media (max-width: 568px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
 `;
 
 const FirstSection = styled.div`

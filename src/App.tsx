@@ -14,14 +14,11 @@ export default function App() {
     <>
       <MaxWidthWrapper>
         <Navbar />
-        {/* <Main>
+        <Main>
           <LeftAside />
           <MainSection />
           <RightAside />
-        </Main> */}
-        {items.map((item) => (
-          <p key={item}>{item.toString()}</p>
-        ))}
+        </Main>
       </MaxWidthWrapper>
       {/* <Footer /> */}
     </>

@@ -37,6 +37,10 @@ const Wrapper = styled.aside`
   display: flex;
   flex-direction: column;
   gap: 30px;
+
+  @media (max-width: 1020px) {
+    display: none;
+  }
 `;
 
 const SearchWrapper = styled.div`
